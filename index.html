@@ -20,6 +20,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Critical CSS -->
+    <style>
+        /* Critical above-the-fold styles */
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; opacity: 0; transition: opacity 0.5s ease; }
+        body.loaded { opacity: 1; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: transparent; transition: all 0.3s ease; padding: 2rem 0; }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ECFDF5 0%, #F5F1E8 50%, #FFFBEB 100%); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo a { font-size: 1.5rem; font-weight: 300; letter-spacing: 0.15em; color: #111827; text-decoration: none; }
+        .hero-title { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 300; color: #047857; text-align: center; line-height: 1.1; letter-spacing: -0.02em; }
+        .hero-subtitle { font-size: clamp(1.25rem, 3vw, 1.5rem); color: #374151; text-align: center; margin-top: 1rem; font-weight: 400; letter-spacing: 0.02em; }
+    </style>
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,7 +44,7 @@
     <nav id="navigation" class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">DAWNSTAR <span style="font-weight: 400;">GLOBAL</span></a>
+                <a href="#home">DAWNSTAR <span class="logo-light">GLOBAL</span></a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>

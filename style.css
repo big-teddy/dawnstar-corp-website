@@ -79,13 +79,10 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
     color: var(--gray-900);
     background-color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -203,6 +200,10 @@ body.loaded {
 
 .nav-logo a:hover {
     color: var(--emerald-600);
+}
+
+.logo-light {
+    font-weight: 400;
 }
 
 .nav-menu {

@@ -312,24 +312,12 @@ const observer = new IntersectionObserver(function(entries) {
         // Initial scroll handler call
         handleScroll();
         
-        // Console welcome message
-        if (console && console.log) {
-            console.log(
-                '%c🌟 DawnStar Global',
-                'color: #10B981; font-size: 24px; font-weight: bold;'
-            );
-            console.log(
-                '%cYour Lifetime Wellness Partner',
-                'color: #059669; font-size: 14px;'
-            );
-            console.log(
-                '%cPowered by Korean Beauty Innovation',
-                'color: #374151; font-size: 12px;'
-            );
-            console.log(
-                '%cLaunching Spring 2025',
-                'color: #D4AF37; font-size: 12px; font-weight: bold;'
-            );
+        // Console welcome message (development only)
+        if (typeof console !== 'undefined' && console.log) {
+            console.log('%c🌟 DawnStar Global', 'color: #10B981; font-size: 24px; font-weight: bold;');
+            console.log('%cYour Lifetime Wellness Partner', 'color: #059669; font-size: 14px;');
+            console.log('%cPowered by Korean Beauty Innovation', 'color: #374151; font-size: 12px;');
+            console.log('%cLaunching Spring 2025', 'color: #D4AF37; font-size: 12px; font-weight: bold;');
         }
     });
     
