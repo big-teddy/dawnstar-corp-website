@@ -25,12 +25,18 @@
         /* Critical above-the-fold styles */
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; opacity: 0; transition: opacity 0.5s ease; }
         body.loaded { opacity: 1; }
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: transparent; transition: all 0.3s ease; padding: 2rem 0; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background-color: transparent; transition: all 0.3s ease; padding: 2rem 0; width: 100%; }
         .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ECFDF5 0%, #F5F1E8 50%, #FFFBEB 100%); }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
         .nav-logo a { font-size: 1.5rem; font-weight: 300; letter-spacing: 0.15em; color: #111827; text-decoration: none; }
         .hero-title { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 300; color: #047857; text-align: center; line-height: 1.1; letter-spacing: -0.02em; }
         .hero-subtitle { font-size: clamp(1.25rem, 3vw, 1.5rem); color: #374151; text-align: center; margin-top: 1rem; font-weight: 400; letter-spacing: 0.02em; }
+        /* Mobile navigation fix */
+        @media (max-width: 768px) {
+            body { padding-top: 80px; }
+            .nav { padding: 1rem 0; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); }
+            .hero { min-height: calc(100vh - 80px); }
+        }
     </style>
     
     <!-- Stylesheet -->

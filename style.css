@@ -85,6 +85,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-top: 0;
 }
 
 /* Custom Scrollbar */
@@ -166,10 +167,11 @@ body.loaded {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 9999;
     background-color: transparent;
     transition: all 0.3s ease;
     padding: var(--space-lg) 0;
+    width: 100%;
 }
 
 .nav.scrolled {
@@ -937,27 +939,43 @@ body.loaded {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Add padding for fixed navigation */
+    }
+    
+    .nav {
+        padding: var(--space-sm) 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow-md);
+    }
+    
     .nav-toggle {
         display: flex;
+        z-index: 10000;
+        position: relative;
     }
     
     .nav-menu {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
         background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
         flex-direction: column;
         gap: 0;
-        padding: var(--space-lg);
+        padding: calc(var(--space-3xl) + var(--space-lg)) var(--space-lg) var(--space-lg);
         box-shadow: var(--shadow-lg);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        z-index: 9998;
     }
     
     .nav-menu.active {
-        max-height: 400px;
+        max-height: 100vh;
     }
     
     .nav-menu li {
@@ -1003,7 +1021,8 @@ body.loaded {
     }
     
     .hero {
-        padding: var(--space-2xl) var(--space-sm);
+        padding: var(--space-xl) var(--space-sm);
+        min-height: calc(100vh - 80px); /* Account for navigation height */
     }
     
     .hero-content {
