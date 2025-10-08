@@ -940,14 +940,24 @@ body.loaded {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 80px; /* Add padding for fixed navigation */
+        padding-top: 0; /* Remove padding to fix layout */
+        margin: 0;
     }
     
     .nav {
         padding: var(--space-sm) 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 1);
+        backdrop-filter: none;
         box-shadow: var(--shadow-md);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    
+    .nav-container {
+        padding: 0 var(--space-sm);
     }
     
     .nav-toggle {
@@ -1021,8 +1031,10 @@ body.loaded {
     }
     
     .hero {
-        padding: var(--space-xl) var(--space-sm);
-        min-height: calc(100vh - 80px); /* Account for navigation height */
+        padding: var(--space-2xl) var(--space-sm);
+        min-height: 100vh;
+        margin-top: 70px;
+        padding-top: var(--space-3xl);
     }
     
     .hero-content {

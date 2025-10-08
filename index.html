@@ -33,9 +33,10 @@
         .hero-subtitle { font-size: clamp(1.25rem, 3vw, 1.5rem); color: #374151; text-align: center; margin-top: 1rem; font-weight: 400; letter-spacing: 0.02em; }
         /* Mobile navigation fix */
         @media (max-width: 768px) {
-            body { padding-top: 80px; }
-            .nav { padding: 1rem 0; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); }
-            .hero { min-height: calc(100vh - 80px); }
+            body { padding-top: 0; margin: 0; }
+            .nav { padding: 1rem 0; background-color: rgba(255, 255, 255, 1); backdrop-filter: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); position: fixed; top: 0; left: 0; right: 0; z-index: 9999; }
+            .nav-container { padding: 0 1rem; }
+            .hero { min-height: 100vh; margin-top: 70px; padding-top: 3rem; }
         }
     </style>
     
