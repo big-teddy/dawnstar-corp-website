@@ -3,128 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DawnStar Corp. - We shine brightest when it is darkest</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>DawnStar Global | Your Lifetime Wellness Partner</title>
+    <meta name="description" content="Premium wellness solutions powered by Korean beauty innovation. From nature's finest ingredients to cutting-edge K-beauty science, we care for you through every stage of life. Launching 2025.">
+    <meta name="keywords" content="Korean beauty, K-beauty, wellness, lifetime wellness, natural skincare, Korean skincare, premium wellness, haircare">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DawnStar Global | Your Lifetime Wellness Partner">
+    <meta property="og:description" content="Premium wellness solutions powered by Korean beauty innovation. Launching 2025.">
+    <meta property="og:image" content="https://dawnstarglobal.com/og-image.jpg">
+    <meta property="og:type" content="website">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="header-container">
-            <div class="logo">
-                <h2>DawnStar Global</h2>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">DAWNSTAR <span style="font-weight: 400;">GLOBAL</span></a>
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#brand">Brand</a></li>
-                    <li><a href="#philosophy">Philosophy</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" role="navigation">
+                <li><a href="#promise">Our Promise</a></li>
+                <li><a href="#korean-advantage">Korean Innovation</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#story">Our Story</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
-        <section id="home" class="hero-section">
+        <section id="home" class="hero">
+            <div class="hero-background"></div>
+            <!-- Decorative Blur Circles -->
+            <div class="hero-blur-circle hero-blur-1"></div>
+            <div class="hero-blur-circle hero-blur-2"></div>
             <div class="hero-content">
-                <h1 class="hero-title">We shine brightest when it is darkest.</h1>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
+                <div class="hero-badge">Launching 2025</div>
+                <h1 class="hero-title">
+                    Your Lifetime<br>
+                    <span class="hero-title-emphasis">Wellness Partner</span>
+                </h1>
+                <p class="hero-subtitle">Powered by Korean Beauty Innovation</p>
+                <p class="hero-description">
+                    From the country that brought you the world's most coveted 
+                    skincare secrets comes a new vision: wellness that cares for you 
+                    from your first breath to your golden years.
+                </p>
+                <a href="#promise" class="scroll-indicator" aria-label="Scroll to Our Promise section">
+                    <span class="scroll-text">Scroll to explore</span>
+                    <div class="scroll-arrow"></div>
+                </a>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="content-section">
+        <!-- Our Promise Section -->
+        <section id="promise" class="promise-section section">
             <div class="container">
-                <div class="section-content">
-                    <h2 class="section-title">About DawnStar</h2>
-                    <p class="section-text">
-                        We believe that a small step following our beliefs makes humanity one step better tomorrow. 
-                        At DawnStar Corp., we are committed to creating products and experiences that nurture both 
-                        body and soul, guiding people toward their brightest potential even in life's darkest moments.
+                <h2 class="section-title">Our Promise</h2>
+                <div class="promise-content">
+                    <p class="promise-lead">Wellness isn't a trend. It's a commitment.</p>
+                    <p class="promise-text">
+                        From the moment you're born to the wisdom of your later years, 
+                        your body deserves products that understand your unique needs, 
+                        adapt to your life stage, and deliver real results.
+                    </p>
+                    <p class="promise-text">
+                        That's why we've built our foundation on Korean beauty science—
+                        recognized globally for decades of innovation, uncompromising 
+                        quality, and proven efficacy. This is wellness you can trust, 
+                        for every chapter of your life.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Brand Section -->
-        <section id="brand" class="content-section">
+        <!-- The Korean Advantage Section -->
+        <section id="korean-advantage" class="korean-advantage section">
             <div class="container">
-                <div class="brand-grid">
-                    <div class="brand-content">
-                        <h2 class="section-title">Our Brand</h2>
-                        <p class="section-text">
-                            DawnStar Corp. represents a lifelong wellness brand that combines the wisdom of nature 
-                            with modern innovation. Our products are crafted with the finest natural ingredients, 
-                            designed to support your journey toward holistic well-being.
-                        </p>
-                        <p class="section-text">
-                            From premium skincare to wellness supplements, each product embodies our philosophy 
-                            of natural healing and sustainable living. We believe in the power of nature to restore, 
-                            rejuvenate, and inspire.
-                        </p>
-                    </div>
-                    <div class="brand-image">
-                        <div class="image-placeholder">
-                            <div class="nature-icon">🌿</div>
-                            <p>Premium Natural Products</p>
+                <h2 class="section-title">The Korean Advantage</h2>
+                <p class="section-subtitle">Why Korean Beauty Science?</p>
+                
+                <div class="advantage-grid">
+                    <div class="advantage-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                            </svg>
                         </div>
+                        <h3 class="card-title">PROVEN EXCELLENCE</h3>
+                        <p class="card-text">
+                            Korea didn't become the global beauty powerhouse by accident. 
+                            It's decades of rigorous research, relentless innovation, and 
+                            an unwavering commitment to quality that the world has come 
+                            to trust. When you choose Korean beauty science, you choose 
+                            excellence backed by results.
+                        </p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">NATURE × SCIENCE</h3>
+                        <p class="card-text">
+                            K-beauty has mastered what others struggle to balance: 
+                            honoring nature's ancient botanical wisdom while harnessing 
+                            cutting-edge dermatological science. We don't just use natural 
+                            ingredients—we unlock their full potential through breakthrough 
+                            formulation technology.
+                        </p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">RESULTS THAT SPEAK</h3>
+                        <p class="card-text">
+                            When Korean beauty brands enter a market, the world pays attention. 
+                            From Seoul to New York, from Tokyo to Paris, K-beauty has earned 
+                            its reputation through one thing: delivering transformative results. 
+                            We bring that same rigor, that same excellence, to your lifetime 
+                            wellness journey.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Philosophy Section -->
-        <section id="philosophy" class="content-section">
+        <!-- Our Approach Section -->
+        <section id="approach" class="approach-section section">
             <div class="container">
-                <h2 class="section-title">Our Philosophy</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-card">
-                        <div class="card-icon">🌅</div>
-                        <h3>Natural Origins</h3>
-                        <p>Every ingredient is sourced from pristine natural environments, ensuring purity and potency in every product.</p>
+                <h2 class="section-title">Our Approach</h2>
+                <p class="section-subtitle">How We Care for You</p>
+                
+                <div class="approach-grid">
+                    <div class="approach-block block-1">
+                        <div class="block-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="block-title">LIFETIME WELLNESS</h3>
+                        <p class="block-subtitle">Your Needs Evolve. So Do We.</p>
+                        <p class="block-text">
+                            Your body at three months isn't the same as at thirty years. 
+                            Or sixty. That's why we create targeted wellness solutions for 
+                            every life stage—from the gentlest care for newborn skin to 
+                            powerful support for aging gracefully. This isn't one-size-fits-all 
+                            wellness. It's personalized care that grows with you.
+                        </p>
                     </div>
-                    <div class="philosophy-card">
-                        <div class="card-icon">💚</div>
-                        <h3>Sustainable Living</h3>
-                        <p>We are committed to environmental responsibility, using eco-friendly practices throughout our entire supply chain.</p>
+
+                    <div class="approach-block block-2">
+                        <div class="block-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="block-title">KOREAN FORMULATION MASTERY</h3>
+                        <p class="block-subtitle">Centuries of Wisdom, Decades of Innovation</p>
+                        <p class="block-text">
+                            We leverage Korea's world-renowned expertise in fermentation 
+                            technology, botanical extraction, and gentle-yet-effective 
+                            formulations. Every product is crafted with the meticulous 
+                            attention to detail that has made K-beauty the global gold 
+                            standard. Ancient secrets, modern science, exceptional results.
+                        </p>
                     </div>
-                    <div class="philosophy-card">
-                        <div class="card-icon">✨</div>
-                        <h3>Holistic Wellness</h3>
-                        <p>Our approach addresses the whole person - body, mind, and spirit - for complete well-being and vitality.</p>
-                    </div>
-                    <div class="philosophy-card">
-                        <div class="card-icon">🌟</div>
-                        <h3>Hope & Healing</h3>
-                        <p>We believe in the transformative power of hope and the body's natural ability to heal and thrive.</p>
+
+                    <div class="approach-block block-3">
+                        <div class="block-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="block-title">PURE, NATURAL INGREDIENTS</h3>
+                        <p class="block-subtitle">Nature Provides. Science Perfects.</p>
+                        <p class="block-text">
+                            We source only the finest natural ingredients—botanicals, 
+                            minerals, and essences that have nourished humanity for millennia. 
+                            But we don't stop there. Through advanced Korean extraction and 
+                            stabilization techniques, we unlock nature's full potential, 
+                            delivering purity and potency in every drop.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="content-section">
+        <!-- Coming Soon Section -->
+        <section id="coming-soon" class="coming-soon section">
             <div class="container">
-                <div class="contact-content">
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-text">
-                        Ready to begin your journey with DawnStar Corp.? We'd love to hear from you and 
-                        help you discover the natural path to wellness.
-                    </p>
-                    <div class="contact-info">
-                        <a href="mailto:contact@dawnstarcorp.com" class="contact-email">contact@dawnstarcorp.com</a>
+                <div class="coming-soon-content">
+                    <h2 class="section-title light">Launching Soon</h2>
+                    <p class="coming-soon-product">Premium Haircare Collection</p>
+                    
+                    <div class="coming-soon-text">
+                        <p>
+                            Our first collection harnesses Korean scalp care technology—
+                            the secret behind Korea's legendary healthy hair culture.
+                        </p>
+                        <p>
+                            Deeply rooted in botanical wisdom and powered by breakthrough 
+                            fermentation science, each formula delivers nourishment that 
+                            starts at the scalp, transforming hair from root to tip.
+                        </p>
+                        <p>
+                            This is haircare that understands you—whether you're 25 or 65, 
+                            whether your hair is fine or thick, straight or curly. Nourishment 
+                            for hair that thrives at every age.
+                        </p>
+                    </div>
+                    
+                    <div class="coming-soon-date">Available Spring 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="story" class="story-section section">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                
+                <div class="story-grid">
+                    <div class="story-column">
+                        <h3 class="story-headline">Born from a belief that everyone deserves world-class wellness.</h3>
+                        <p class="story-text">
+                            At DawnStar Global, wellness isn't a luxury reserved for the few—
+                            it's a fundamental right for all. We were founded on a simple but 
+                            powerful truth: every person, at every age, deserves products that 
+                            care for them as deeply as they care for their loved ones.
+                        </p>
+                        <p class="story-text">
+                            Too often, wellness brands focus on a single moment in life. 
+                            But your journey doesn't stop at 25, or 45, or 65. You deserve 
+                            a partner as committed to your lifetime of wellness as you are.
+                        </p>
+                    </div>
+
+                    <div class="story-column">
+                        <h3 class="story-headline">Bridging East and West, tradition and innovation.</h3>
+                        <p class="story-text">
+                            We bring Korean beauty innovation to the world—not as a fleeting 
+                            trend, but as a trusted foundation for lifelong wellness. By 
+                            bridging Eastern botanical wisdom with Western scientific rigor, 
+                            we've created something rare: products that honor nature, deliver 
+                            results, and serve you through every chapter.
+                        </p>
+                        <p class="story-text">
+                            From your first breath to your wisest years, from Seoul's beauty 
+                            labs to your daily ritual, DawnStar Global illuminates your path 
+                            to lifelong vitality.
+                        </p>
+                        <p class="story-text story-emphasis">
+                            This is wellness, elevated by the world's best beauty science.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -132,12 +291,38 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p class="company-address">1111B S Governors Ave STE 40086 Dover, DE 19904</p>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-logo">DAWNSTAR GLOBAL</h3>
+                    <p class="footer-tagline">Your Lifetime Wellness Partner</p>
+                    <p class="footer-copyright">
+                        © 2025 DawnStar Global, Corp.<br>
+                        All rights reserved.
+                    </p>
                 </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#promise">Our Promise</a></li>
+                        <li><a href="#korean-advantage">Korean Innovation</a></li>
+                        <li><a href="#approach">Our Approach</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-contact">
+                        <a href="mailto:contact@dawnstarcorp.com">contact@dawnstarcorp.com</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Crafted with care for your lifetime wellness journey</p>
             </div>
         </div>
     </footer>
