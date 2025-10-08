@@ -74,18 +74,22 @@
         // Update navigation background
         if (scrollY > heroHeight * 0.3) {
             nav.classList.add('scrolled');
-    } else {
+        } else {
             nav.classList.remove('scrolled');
         }
         
-        // Update active navigation link
+        // Update active navigation link with improved detection
         let current = '';
+        const windowHeight = window.innerHeight;
+        const scrollCenter = scrollY + (windowHeight / 2);
+        
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            const scrollPosition = scrollY + 200;
+            const sectionCenter = sectionTop + (sectionHeight / 2);
             
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            // Check if section is in the center area of viewport
+            if (scrollCenter >= sectionTop && scrollCenter <= sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
@@ -98,12 +102,13 @@
             }
         });
         
-        // Parallax effect for hero using requestAnimationFrame
+        // Parallax effect for hero - reduced intensity and smoother
         if (hero && scrollY < window.innerHeight) {
-            requestAnimationFrame(() => {
-                const rate = scrollY * 0.3;
-                hero.style.transform = `translate3d(0, ${rate}px, 0)`;
-            });
+            const rate = scrollY * 0.1; // Reduced from 0.3 to 0.1 for smoother effect
+            hero.style.transform = `translate3d(0, ${rate}px, 0)`;
+        } else if (hero) {
+            // Reset transform when out of hero section
+            hero.style.transform = 'translate3d(0, 0, 0)';
         }
         
         ticking = false;

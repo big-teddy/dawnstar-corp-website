@@ -75,7 +75,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; - Disabled to prevent scroll jumping */
 }
 
 body {
@@ -153,8 +153,8 @@ body.loaded {
 
 .section {
     padding: var(--space-4xl) 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    /* scroll-snap-align: start; - Disabled to prevent scroll jumping */
+    /* scroll-snap-stop: normal; - Disabled to prevent scroll jumping */
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -273,7 +273,7 @@ body.loaded {
     overflow: hidden;
     padding: var(--space-4xl) var(--space-lg);
     background: linear-gradient(135deg, var(--emerald-50) 0%, var(--cream) 50%, var(--amber-50) 100%);
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; - Disabled to prevent scroll jumping */
     will-change: transform;
     z-index: 1;
 }
@@ -498,7 +498,7 @@ body.loaded {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; - Disabled to prevent scroll jumping */
     position: relative;
     z-index: 2;
 }
@@ -545,7 +545,7 @@ body.loaded {
 
 .korean-advantage {
     background-color: var(--off-white);
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; - Disabled to prevent scroll jumping */
     position: relative;
     z-index: 2;
 }
