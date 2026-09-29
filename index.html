@@ -1,340 +1,641 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>DawnStar Global | Your Lifetime Wellness Partner</title>
-    <meta name="description" content="Premium wellness solutions powered by Korean beauty innovation. From nature's finest ingredients to cutting-edge K-beauty science, we care for you through every stage of life. Launching 2025.">
-    <meta name="keywords" content="Korean beauty, K-beauty, wellness, lifetime wellness, natural skincare, Korean skincare, premium wellness, haircare">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="DawnStar Global | Your Lifetime Wellness Partner">
-    <meta property="og:description" content="Premium wellness solutions powered by Korean beauty innovation. Launching 2025.">
-    <meta property="og:image" content="https://dawnstarcorp.com/og-image.jpg">
-    <meta property="og:type" content="website">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Critical CSS -->
-    <style>
-        /* Critical above-the-fold styles */
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; opacity: 0; transition: opacity 0.5s ease; }
-        body.loaded { opacity: 1; }
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background-color: transparent; transition: all 0.3s ease; padding: 2rem 0; width: 100%; }
-        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ECFDF5 0%, #F5F1E8 50%, #FFFBEB 100%); }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo a { font-size: 1.5rem; font-weight: 300; letter-spacing: 0.15em; color: #111827; text-decoration: none; }
-        .hero-title { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 300; color: #047857; text-align: center; line-height: 1.1; letter-spacing: -0.02em; }
-        .hero-subtitle { font-size: clamp(1.25rem, 3vw, 1.5rem); color: #374151; text-align: center; margin-top: 1rem; font-weight: 400; letter-spacing: 0.02em; }
-        /* Mobile navigation fix */
-        @media (max-width: 768px) {
-            body { padding-top: 0; margin: 0; }
-            .nav { padding: 1rem 0; background-color: rgba(255, 255, 255, 1); backdrop-filter: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); position: fixed; top: 0; left: 0; right: 0; z-index: 9999; }
-            .nav-container { padding: 0 1rem; }
-            .hero { min-height: 100vh; margin-top: 70px; padding-top: 3rem; }
-        }
-    </style>
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Skip to main content -->
-    <a href="#main-content" class="skip-to-main">Skip to main content</a>
-    
-    <!-- Navigation -->
-    <nav id="navigation" class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">DAWNSTAR <span class="logo-light">GLOBAL</span></a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e7e3f1" />
+    <meta
+      name="description"
+      content="Dawnstar is developing Wellyn, your personal wellness AI, to help you compare care products, decide what to buy and use what you own. Starting with skincare."
+    />
+    <meta
+      property="og:title"
+      content="Dawnstar — AI for more personal wellness"
+    />
+    <meta
+      property="og:description"
+      content="Meet Wellyn, our AI wellness service in development. Help choosing personal care products and making them part of everyday life. Starting with skincare."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dawnstar" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://dawnstarcorp.com/" />
+    <meta
+      property="og:image"
+      content="https://dawnstarcorp.com/images/dawnstar-social.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Dawnstar — A little more you. Building Wellyn, your personal wellness AI."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dawnstar — AI for more personal wellness"
+    />
+    <meta
+      name="twitter:description"
+      content="An AI wellness company developing Wellyn. Help choosing personal care products and making them part of everyday life. Starting with skincare."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dawnstarcorp.com/images/dawnstar-social.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Dawnstar — A little more you. Building Wellyn, your personal wellness AI."
+    />
+    <link rel="canonical" href="https://dawnstarcorp.com/" />
+    <title>Dawnstar — AI for more personal wellness</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/images/hero-1200.webp"
+      as="image"
+      imagesrcset="/images/hero-720.webp 720w, /images/hero-1200.webp 1200w"
+      imagesizes="(max-width: 900px) 85vw, 55vw"
+    />
+    <script type="module" src="/script.js"></script>
+  </head>
+  <body>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="arrow" viewBox="0 0 24 24">
+          <path d="M5 19 19 5M5 5h14v14" />
+        </symbol>
+        <symbol id="sun" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="9" />
+          <path
+            d="M24 3v6m0 30v6M3 24h6m30 0h6M9 9l4 4m22 22 4 4M9 39l4-4m22-22 4-4"
+          />
+        </symbol>
+        <symbol id="bottle" viewBox="0 0 48 48">
+          <path
+            d="M19 12V4h10v8m-12 0h14a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3V15a3 3 0 0 1 3-3Z"
+          />
+          <path d="M14 26h20" />
+        </symbol>
+        <symbol id="heart" viewBox="0 0 48 48">
+          <path d="M24 41 7 24C-5 11 13-1 24 12 35-1 53 11 41 24Z" />
+        </symbol>
+        <symbol id="wave" viewBox="0 0 48 48">
+          <path d="M2 25c8 0 7-10 16-10s10 18 19 18c4 0 6-4 9-8" />
+        </symbol>
+        <symbol id="drop" viewBox="0 0 48 48">
+          <path d="M24 4S10 21 10 30a14 14 0 0 0 28 0C38 21 24 4 24 4Z" />
+        </symbol>
+        <symbol id="moon" viewBox="0 0 48 48">
+          <path d="M39 29A18 18 0 0 1 19 6a19 19 0 1 0 20 23Z" />
+        </symbol>
+      </defs>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Dawnstar home">dawnstar</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#vision">Our vision</a><a href="#approach">Our approach</a
+        ><a href="#wellyn">Wellyn</a>
+      </nav>
+      <a class="button header-contact" href="#contact"
+        >Get in touch <svg><use href="#arrow" /></svg
+      ></a>
+      <button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#vision">Our vision <span>01</span></a
+        ><a href="#approach">Our approach <span>02</span></a
+        ><a href="#wellyn">Wellyn <span>03</span></a
+        ><a href="#contact"
+          >Get in touch <svg><use href="#arrow" /></svg
+        ></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-orbits" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+        </div>
+        <div class="hero-copy">
+          <div class="hero-kicker eyebrow">An AI wellness company</div>
+          <h1 id="hero-title">
+            <span class="hero-line">A little more</span
+            ><span class="hero-you">you.</span>
+          </h1>
+          <p>
+            We’re building AI to help you choose personal care products that fit
+            your life.
+          </p>
+          <a class="button" href="#wellyn"
+            >Meet Wellyn <svg><use href="#arrow" /></svg
+          ></a>
+        </div>
+        <div class="hero-portrait">
+          <img
+            src="/images/hero-1200.webp"
+            srcset="/images/hero-720.webp 720w, /images/hero-1200.webp 1200w"
+            sizes="(max-width: 900px) 85vw, 55vw"
+            width="1024"
+            height="1536"
+            alt="A woman enjoying a quiet moment in the sunlight"
+            fetchpriority="high"
+          />
+        </div>
+        <svg class="hero-orbit-copy" viewBox="0 0 700 900" aria-hidden="true">
+          <defs>
+            <path id="text-orbit" d="M 330,20 A 330,420 0 1,1 329,20" />
+          </defs>
+          <text>
+            <textPath href="#text-orbit" startOffset="3%">
+              YOUR LIFE. YOUR RHYTHM.
+            </textPath>
+          </text>
+        </svg>
+        <a class="hero-footnote" href="#vision"
+          ><span>Why we’re building Dawnstar</span
+          ><span class="down-arrow" aria-hidden="true">↓</span></a
+        >
+      </section>
+
+      <section
+        class="vision section-pad"
+        id="vision"
+        aria-labelledby="vision-title"
+      >
+        <p class="eyebrow">Our vision · Personal care, made more accessible</p>
+        <h2 id="vision-title">
+          <span class="reveal-word">Personal</span>
+          <span class="reveal-word">care.</span><br />
+          <span class="reveal-word">For</span>
+          <span class="highlight reveal-word">every one</span>
+          <span class="reveal-word">of us.</span>
+        </h2>
+        <p class="vision-body">
+          Personal attention shouldn’t be a luxury. We’re building AI to make
+          guidance on everyday care available to more people, with their
+          preferences, budget and way of life in mind.
+        </p>
+        <div class="vision-thread" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section id="approach" class="approach" aria-labelledby="approach-title">
+        <div class="approach-stage section-pad">
+          <div class="section-top">
+            <p class="eyebrow">How we’re approaching personalization</p>
+            <p class="eyebrow approach-counter">01 — Personal context</p>
+          </div>
+          <div class="approach-grid">
+            <div class="approach-copy">
+              <h2 id="approach-title">
+                A shortlist.<br />Shaped<br />around<br />you.
+              </h2>
+              <p
+                id="approach-description"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                What you need, what you prefer and what you already use. These
+                are the starting points for the recommendations we’re
+                developing.
+              </p>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div
+              class="context-canvas"
+              role="img"
+              aria-label="Personal context informs AI product curation, clear reasons to choose, and care that evolves after the purchase"
+            >
+              <div class="context-ring" aria-hidden="true"><span></span></div>
+              <div class="context-center">you</div>
+              <div class="context-node node-environment">
+                <svg><use href="#sun" /></svg><span>Your<br />life</span>
+              </div>
+              <div class="context-node node-shelf">
+                <svg><use href="#bottle" /></svg><span>Your<br />shelf</span>
+              </div>
+              <div class="context-node node-preferences">
+                <svg><use href="#heart" /></svg
+                ><span>Your<br />preferences</span>
+              </div>
+              <div class="context-node node-feedback">
+                <svg><use href="#wave" /></svg><span>Your<br />feedback</span>
+              </div>
+              <div class="simple-plan" aria-hidden="true">
+                <span class="plan-label">From options to a shortlist</span>
+                <div>
+                  <span>01</span> Find relevant products
+                  <svg><use href="#bottle" /></svg>
+                </div>
+                <div>
+                  <span>02</span> Understand why they fit
+                  <svg><use href="#sun" /></svg>
+                </div>
+                <div>
+                  <span>03</span> Choose with confidence
+                  <svg><use href="#wave" /></svg>
+                </div>
+                <p>Curated by AI. Chosen by you.</p>
+              </div>
+              <div class="evolving-note" aria-hidden="true">
+                Revisit what works.<br /><span>As your needs change.</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="approach-steps"
+            role="group"
+            aria-label="Our approach stages"
+          >
+            <button data-step="0" aria-pressed="true">
+              <span>01</span> Start with you <i></i>
             </button>
-            <ul class="nav-menu" role="navigation">
-                <li><a href="#promise">Our Promise</a></li>
-                <li><a href="#korean-advantage">Korean Innovation</a></li>
-                <li><a href="#approach">Our Approach</a></li>
-                <li><a href="#story">Our Story</a></li>
-            </ul>
+            <button data-step="1" aria-pressed="false">
+              <span>02</span> Narrow the options <i></i>
+            </button>
+            <button data-step="2" aria-pressed="false">
+              <span>03</span> Adapt over time <i></i>
+            </button>
+          </div>
+          <div class="mobile-step-copy" aria-live="polite"></div>
         </div>
-    </nav>
+      </section>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-background"></div>
-            <!-- Decorative Blur Circles -->
-            <div class="hero-blur-circle hero-blur-1"></div>
-            <div class="hero-blur-circle hero-blur-2"></div>
-            <div class="hero-content">
-                <div class="hero-badge">Launching 2025</div>
-                <h1 class="hero-title">
-                    Your Lifetime<br>
-                    <span class="hero-title-emphasis">Wellness Partner</span>
-                </h1>
-                <p class="hero-subtitle">Powered by Korean Beauty Innovation</p>
-                <p class="hero-description">
-                    From the country that brought you the world's most coveted 
-                    skincare secrets comes a new vision: wellness that cares for you 
-                    from your first breath to your golden years.
-                </p>
-                <a href="#promise" class="scroll-indicator" aria-label="Scroll to Our Promise section">
-                    <span class="scroll-text">Scroll to explore</span>
-                    <div class="scroll-arrow"></div>
-                </a>
+      <section
+        id="wellyn"
+        class="wellyn section-pad"
+        aria-labelledby="wellyn-title"
+      >
+        <div class="section-top">
+          <p class="eyebrow">Our first AI service</p>
+          <p class="eyebrow development"><span></span> In development</p>
+        </div>
+        <div class="wellyn-orbit" aria-hidden="true"></div>
+        <div class="wellyn-grid">
+          <div class="wellyn-copy">
+            <h2 id="wellyn-title" class="wellyn-wordmark">
+              wellyn<span aria-hidden="true">✳</span>
+            </h2>
+            <p class="wellyn-headline">Curated for you.<br />Chosen by you.</p>
+          </div>
+          <div class="wellyn-intro">
+            <p class="eyebrow">Starting with skincare</p>
+            <p class="wellyn-description">
+              Your personal wellness AI. We’re building Wellyn to help you
+              compare products, decide what to buy and use what you already own.
+            </p>
+            <a class="button button-outline" href="#curation"
+              >Explore the concept <svg><use href="#arrow" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="demo-wrap" id="curation">
+          <div class="routine-demo">
+            <div class="demo-brand">
+              <span>wellyn</span
+              ><span class="demo-ai-label">Interactive concept</span>
             </div>
-        </section>
-
-        <!-- Our Promise Section -->
-        <section id="promise" class="promise-section section">
-            <div class="container">
-                <h2 class="section-title">Our Promise</h2>
-                <div class="promise-content">
-                    <p class="promise-lead">Wellness isn't a trend. It's a commitment.</p>
-                    <p class="promise-text">
-                        From the moment you're born to the wisdom of your later years, 
-                        your body deserves products that understand your unique needs, 
-                        adapt to your life stage, and deliver real results.
+            <div class="demo-heading">
+              <h3 id="demo-title">One preference.<br />Two options.</h3>
+              <div
+                class="experience-tabs"
+                role="group"
+                aria-label="Explore the Wellyn concept"
+              >
+                <button
+                  data-view="products"
+                  aria-pressed="true"
+                  aria-controls="product-panel"
+                >
+                  <span>01</span> Compare products
+                </button>
+                <button
+                  data-view="routine"
+                  aria-pressed="false"
+                  aria-controls="routine-panel"
+                >
+                  <span>02</span> See the routine
+                </button>
+              </div>
+            </div>
+            <div class="demo-body">
+              <div id="product-panel">
+                <div class="example-context">
+                  <div class="context-summary">
+                    <span class="context-spark" aria-hidden="true">✳</span>
+                    <div>
+                      <span class="reason-label">Example preference</span>
+                      <p>A moisturizer with a feel you like.</p>
+                    </div>
+                  </div>
+                  <div class="preference-control">
+                    <label for="texture">Try a different feel</label
+                    ><select id="texture">
+                      <option value="light">A lighter feel</option>
+                      <option value="rich">A richer feel</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="curation-layout">
+                  <div
+                    class="product-options"
+                    role="group"
+                    aria-label="Compare illustrative product profiles"
+                  >
+                    <button
+                      class="product-option"
+                      data-product="gel"
+                      aria-pressed="true"
+                      aria-label="Choose Daily gel-cream"
+                    >
+                      <span class="product-visual product-visual-gel"
+                        ><span class="product-category">01 / LIGHTWEIGHT</span
+                        ><img
+                          src="/images/curation-gel.webp"
+                          width="512"
+                          height="768"
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                        /><span class="selection-mark" aria-hidden="true"
+                          >✓</span
+                        ></span
+                      >
+                      <span class="product-option-copy"
+                        ><span class="product-name">Daily gel-cream</span
+                        ><span class="product-meta"
+                          >Light finish · Airless pump</span
+                        ><span class="product-action"
+                          >Compare option
+                          <svg aria-hidden="true">
+                            <use href="#arrow" /></svg></span
+                      ></span>
+                    </button>
+                    <button
+                      class="product-option"
+                      data-product="cream"
+                      aria-pressed="false"
+                      aria-label="Choose Rich moisture cream"
+                    >
+                      <span class="product-visual product-visual-cream"
+                        ><span class="product-category">02 / CUSHIONING</span
+                        ><img
+                          src="/images/curation-cream.webp"
+                          width="768"
+                          height="768"
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                        /><span class="selection-mark" aria-hidden="true"
+                          >✓</span
+                        ></span
+                      >
+                      <span class="product-option-copy"
+                        ><span class="product-name">Rich moisture cream</span
+                        ><span class="product-meta"
+                          >Rich finish · Cream jar</span
+                        ><span class="product-action"
+                          >Compare option
+                          <svg aria-hidden="true">
+                            <use href="#arrow" /></svg></span
+                      ></span>
+                    </button>
+                  </div>
+                  <div class="decision-panel">
+                    <div
+                      class="curation-reason"
+                      aria-live="polite"
+                      aria-atomic="true"
+                    >
+                      <span class="reason-label">Why this option</span>
+                      <h4 id="curation-title">
+                        Matches your texture preference.
+                      </h4>
+                      <p id="curation-reason">
+                        You chose a lighter feel. This example gel-cream matches
+                        that texture preference.
+                      </p>
+                      <dl class="choice-details">
+                        <div>
+                          <dt>The feel</dt>
+                          <dd id="choice-feel">Lightweight</dd>
+                        </div>
+                        <div>
+                          <dt>Worth considering</dt>
+                          <dd id="choice-tradeoff">
+                            Less cushioning than the rich cream.
+                          </dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <p class="purchase-context">
+                      This example compares texture only. Wellyn is being
+                      developed to consider ingredients, budget and what you
+                      already own.
                     </p>
-                    <p class="promise-text">
-                        That's why we've built our foundation on Korean beauty science—
-                        recognized globally for decades of innovation, uncompromising 
-                        quality, and proven efficacy. This is wellness you can trust, 
-                        for every chapter of your life.
+                    <button class="button curation-continue" type="button">
+                      See it in a routine <svg><use href="#arrow" /></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="routine-panel" hidden>
+                <div class="routine-layout">
+                  <div class="chosen-product">
+                    <div class="chosen-product-image">
+                      <img
+                        id="routine-product-image"
+                        src="/images/curation-gel.webp"
+                        width="512"
+                        height="768"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div>
+                      <p class="reason-label">Selected product</p>
+                      <h4 id="routine-product-name">Daily gel-cream</h4>
+                      <p>One addition to the products you already use.</p>
+                    </div>
+                  </div>
+                  <div class="routine-plan">
+                    <p class="routine-context">
+                      An example of how your choice fits into a routine.
                     </p>
+                    <div
+                      class="routine-tabs"
+                      role="group"
+                      aria-label="Choose example routine"
+                    >
+                      <button data-period="morning" aria-pressed="true">
+                        Morning</button
+                      ><button data-period="evening" aria-pressed="false">
+                        Evening
+                      </button>
+                    </div>
+                    <div
+                      id="routine-steps"
+                      aria-live="polite"
+                      aria-atomic="true"
+                    ></div>
+                    <div class="weather-control">
+                      <label for="weather">Example weather</label
+                      ><select id="weather">
+                        <option value="everyday">No change</option>
+                        <option value="dry">Cooler, drier days</option>
+                        <option value="warm">Warmer, humid days</option>
+                      </select>
+                    </div>
+                    <p
+                      class="routine-insight"
+                      id="routine-insight"
+                      aria-live="polite"
+                    >
+                      A new choice, alongside the products you already own.
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+            <p class="demo-disclaimer">
+              Concept preview with illustrative products. Responses are preset;
+              this is not a live AI recommendation.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- The Korean Advantage Section -->
-        <section id="korean-advantage" class="korean-advantage section">
-            <div class="container">
-                <h2 class="section-title">Korean Innovation</h2>
-                <p class="section-subtitle">Why Korean Beauty Science Leads the World</p>
-                
-                <div class="advantage-grid">
-                    <div class="advantage-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5"></path>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">PROVEN EXCELLENCE</h3>
-                        <p class="card-text">
-                            Decades of rigorous research and relentless innovation have made Korea 
-                            the global beauty powerhouse. When you choose Korean beauty science, 
-                            you choose excellence backed by proven results.
-                        </p>
-                    </div>
+      <section class="chapters" id="chapters" aria-labelledby="chapters-title">
+        <div class="chapters-copy">
+          <p class="eyebrow">Our long-term vision</p>
+          <h2 id="chapters-title">Care for<br />every <span>chapter.</span></h2>
+          <p class="chapters-intro">Personal care needs change with life.</p>
+          <p class="chapters-body">
+            From a child’s first lotion to the changing needs of later life, we
+            envision AI-guided product choices and personal care that evolve
+            with you and the people you care for.
+          </p>
+          <span class="chapters-note"
+            >Helping more people live well, at every age.</span
+          >
+        </div>
+        <figure class="chapters-visual">
+          <div class="chapters-image">
+            <img
+              src="/images/chapters-1440.webp"
+              srcset="
+                /images/chapters-800.webp   800w,
+                /images/chapters-1440.webp 1440w
+              "
+              sizes="(max-width: 900px) 100vw, 58vw"
+              width="2048"
+              height="1152"
+              loading="lazy"
+              decoding="async"
+              alt="A child’s hand resting in an adult’s palm, with an older adult’s hand alongside"
+            />
+          </div>
+          <figcaption>For ourselves, and the people we care for.</figcaption>
+        </figure>
+      </section>
 
-                    <div class="advantage-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">NATURE × SCIENCE</h3>
-                        <p class="card-text">
-                            K-beauty perfectly balances nature's botanical wisdom with 
-                            cutting-edge dermatological science. We don't just use natural 
-                            ingredients—we unlock their full potential through breakthrough 
-                            formulation technology.
-                        </p>
-                    </div>
+      <section
+        class="principles section-pad"
+        id="principles"
+        aria-labelledby="principles-title"
+      >
+        <div class="principles-heading">
+          <p class="eyebrow">Our product principles</p>
+          <h2 id="principles-title">What we’re<br />building toward.</h2>
+          <p>The principles guiding Wellyn’s development.</p>
+        </div>
+        <div class="principle-list">
+          <details open>
+            <summary>
+              <span class="row-number">01</span
+              ><span>Fewer products to compare.</span
+              ><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              The goal is a manageable set of options, selected around your
+              needs, preferences and budget. What you already own should be part
+              of that decision, too.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="row-number">02</span
+              ><span>A reason for each suggestion.</span
+              ><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              You should be able to see why a product is suggested, what its
+              trade-offs are and what information is missing. We intend to make
+              paid partnerships and affiliate links clear wherever they appear.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="row-number">03</span
+              ><span>Support after the purchase.</span
+              ><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              We’re planning guidance that helps you use the products you
+              choose, keep track of what works and adjust as your needs change.
+              A useful next step may be to keep what you have.
+            </p>
+          </details>
+        </div>
+      </section>
 
-                    <div class="advantage-card">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">RESULTS THAT SPEAK</h3>
-                        <p class="card-text">
-                            From Seoul to New York, from Tokyo to Paris, K-beauty has earned 
-                            global recognition through one thing: delivering transformative results. 
-                            We bring that same excellence to your lifetime wellness journey.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Approach Section -->
-        <section id="approach" class="approach-section section">
-            <div class="container">
-                <h2 class="section-title">Our Approach</h2>
-                <p class="section-subtitle">Lifetime Wellness, Every Step of the Way</p>
-                
-                <div class="approach-grid">
-                    <div class="approach-block block-1">
-                        <div class="block-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h3 class="block-title">LIFETIME WELLNESS</h3>
-                        <p class="block-subtitle">Your Needs Evolve. So Do We.</p>
-                        <p class="block-text">
-                            Your body changes through every life stage. We create targeted 
-                            wellness solutions—from gentle newborn care to graceful aging support. 
-                            This is personalized wellness that grows with you.
-                        </p>
-                    </div>
-
-                    <div class="approach-block block-2">
-                        <div class="block-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="block-title">KOREAN FORMULATION MASTERY</h3>
-                        <p class="block-subtitle">Centuries of Wisdom, Decades of Innovation</p>
-                        <p class="block-text">
-                            We leverage Korea's expertise in fermentation technology, 
-                            botanical extraction, and gentle-yet-effective formulations. 
-                            Every product is crafted with meticulous attention to detail, 
-                            combining ancient secrets with modern science.
-                        </p>
-                    </div>
-
-                    <div class="approach-block block-3">
-                        <div class="block-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                <path d="M9 12l2 2 4-4"></path>
-                            </svg>
-                        </div>
-                        <h3 class="block-title">PURE, NATURAL INGREDIENTS</h3>
-                        <p class="block-subtitle">Nature Provides. Science Perfects.</p>
-                        <p class="block-text">
-                            We source only the finest natural ingredients that have nourished 
-                            humanity for millennia. Through advanced Korean extraction and 
-                            stabilization techniques, we unlock nature's full potential, 
-                            delivering purity and potency in every drop.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Coming Soon Section -->
-        <section id="coming-soon" class="coming-soon section">
-            <div class="container">
-                <div class="coming-soon-content">
-                    <h2 class="section-title light">Launching Soon</h2>
-                    <p class="coming-soon-product">Premium Haircare Collection</p>
-                    
-                    <div class="coming-soon-text">
-                        <p>
-                            Our first collection harnesses Korean scalp care technology—
-                            the secret behind Korea's legendary healthy hair culture.
-                        </p>
-                        <p>
-                            Deeply rooted in botanical wisdom and powered by breakthrough 
-                            fermentation science, each formula delivers nourishment that 
-                            starts at the scalp, transforming hair from root to tip.
-                        </p>
-                        <p>
-                            This is haircare that understands you—whether you're 25 or 65, 
-                            whether your hair is fine or thick, straight or curly. Nourishment 
-                            for hair that thrives at every age.
-                        </p>
-                    </div>
-                    
-                    <div class="coming-soon-date">Available Winter 2025</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Story Section -->
-        <section id="story" class="story-section section">
-            <div class="container">
-                <h2 class="section-title">Our Story</h2>
-                
-                <div class="story-grid">
-                    <div class="story-column">
-                        <h3 class="story-headline">Born from a belief that everyone deserves world-class wellness.</h3>
-                        <p class="story-text">
-                            At DawnStar Global, wellness isn't a luxury—it's a fundamental right. 
-                            We believe every person, at every age, deserves products that care for 
-                            them as deeply as they care for their loved ones.
-                        </p>
-                        <p class="story-text">
-                            Your wellness journey doesn't stop at 25, or 45, or 65. You deserve 
-                            a partner committed to your lifetime of wellness.
-                        </p>
-                    </div>
-
-                    <div class="story-column">
-                        <h3 class="story-headline">Bridging East and West, tradition and innovation.</h3>
-                        <p class="story-text">
-                            We bring Korean beauty innovation to the world—not as a fleeting 
-                            trend, but as a trusted foundation for lifelong wellness. By 
-                            bridging Eastern botanical wisdom with Western scientific rigor, 
-                            we create products that honor nature and deliver results.
-                        </p>
-                        <p class="story-text">
-                            From your first breath to your wisest years, DawnStar Global 
-                            illuminates your path to lifelong vitality.
-                        </p>
-                        <p class="story-text story-emphasis">
-                            This is wellness, elevated by the world's best beauty science.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <footer id="contact" class="contact section-pad">
+        <div class="contact-top">
+          <p class="eyebrow">Build with Dawnstar</p>
+          <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+        </div>
+        <div class="contact-main">
+          <h2>Let’s make care<br />more personal.</h2>
+          <div class="contact-links">
+            <p>
+              We’d like to hear from people working<br />in AI, personal care
+              and retail.
+            </p>
+            <a class="contact-email" href="mailto:contact@dawnstarcorp.com"
+              >Get in touch <svg><use href="#arrow" /></svg></a
+            ><button class="copy-email" type="button">Copy email address</button
+            ><span class="copy-status" role="status"></span>
+          </div>
+        </div>
+        <div class="footer-wordmark" aria-hidden="true">dawnstar</div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> Dawnstar Corp</span
+          ><span>AI for everyday wellness.</span
+          ><span>Wellyn is in development.</span>
+        </div>
+      </footer>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="footer-logo">DAWNSTAR GLOBAL</h3>
-                    <p class="footer-tagline">Your Lifetime Wellness Partner</p>
-                    <p class="footer-copyright">
-                        © 2025 DawnStar Global, Corp.<br>
-                        All rights reserved.
-                    </p>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-title">Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="#promise">Our Promise</a></li>
-                        <li><a href="#korean-advantage">Korean Innovation</a></li>
-                        <li><a href="#approach">Our Approach</a></li>
-                        <li><a href="#story">Our Story</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-title">Contact</h4>
-                    <p class="footer-contact">
-                        <a href="mailto:contact@dawnstarcorp.com">contact@dawnstarcorp.com</a>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>Crafted with care for your lifetime wellness journey</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+    <button class="motion-toggle" type="button" aria-label="Pause motion">
+      <span class="motion-icon" aria-hidden="true">Ⅱ</span
+      ><span class="motion-label">Pause motion</span>
+    </button>
+    <noscript
+      ><p class="noscript-note">
+        JavaScript is off. Explore our company below; the interactive Wellyn
+        concept needs JavaScript.
+      </p></noscript
+    >
+  </body>
 </html>
