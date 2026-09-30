@@ -454,13 +454,19 @@ img {
   top: 13%;
   left: 15%;
 }
-.context-center {
+.context-center-anchor {
   position: absolute;
   left: 50%;
   top: 50%;
   translate: -50% -50%;
   width: 31%;
   aspect-ratio: 1;
+  z-index: 2;
+}
+/* Keep layout centering separate from the circle's animated transform. */
+.context-center {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: #392e42;
   color: var(--white);
@@ -537,7 +543,7 @@ img {
 }
 .simple-plan > div span {
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.72;
 }
 .simple-plan svg {
   margin-left: auto;
@@ -551,7 +557,7 @@ img {
 }
 .evolving-note {
   position: absolute;
-  bottom: 25%;
+  bottom: 29%;
   left: 16%;
   right: 16%;
   text-align: center;
@@ -561,7 +567,7 @@ img {
   font-size: 18px;
 }
 .evolving-note span {
-  opacity: 0.6;
+  opacity: 0.72;
 }
 .approach-steps {
   display: flex;
@@ -1388,7 +1394,6 @@ details[open] .plus:after {
   }
   .evolving-note {
     font-size: 15px;
-    bottom: 23%;
   }
   .approach-steps {
     order: 2;
@@ -1707,8 +1712,10 @@ details[open] .plus:after {
   .node-feedback {
     left: 38%;
   }
-  .context-center {
+  .context-center-anchor {
     width: 28%;
+  }
+  .context-center {
     font-size: 45px;
   }
   .simple-plan {
@@ -1731,7 +1738,6 @@ details[open] .plus:after {
   }
   .evolving-note {
     font-size: 14px;
-    bottom: 21%;
   }
 }
 @media (max-width: 900px) {
@@ -2664,9 +2670,8 @@ body.motion-paused .product-visual img {
     font-size: 22px;
   }
   .preference-control {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
     gap: 8px;
   }
   .preference-control label {
@@ -2674,11 +2679,19 @@ body.motion-paused .product-visual img {
     white-space: normal;
   }
   .preference-control select {
-    width: 142px;
+    width: 100%;
     flex: none;
     font-size: 16px;
   }
+  .weather-control {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .routine-plan .weather-control label {
+    max-width: none;
+  }
   .weather-control select {
+    width: 100%;
     font-size: 16px;
     min-height: 44px;
   }
