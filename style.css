@@ -2801,3 +2801,71 @@ body.motion-paused .product-visual img {
     font-size: 11px;
   }
 }
+
+/* Static company content and navigation remain usable if JavaScript fails. */
+#mobile-nav {
+  display: none;
+}
+body:not(.app-ready) .menu-toggle,
+body:not(.app-ready) .motion-toggle,
+body:not(.app-ready) .copy-email {
+  display: none;
+}
+body.app-ready .contact-address {
+  display: none;
+}
+body.app-ready .concept-availability {
+  display: none;
+}
+.concept-availability {
+  font-size: 13px;
+  margin-top: 12px;
+}
+.contact-address {
+  font-size: 13px;
+}
+[data-enhanced]:disabled {
+  cursor: default;
+}
+.approach-steps button:focus-visible {
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  body:not(.app-ready) .site-header {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    height: auto;
+    margin: 12px 16px;
+    flex-wrap: wrap;
+    border-radius: 22px;
+  }
+  body:not(.app-ready) #mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    flex-basis: 100%;
+    padding: 10px 0 0;
+    box-shadow: none;
+  }
+  body.app-ready #mobile-nav:not([hidden]) {
+    display: flex;
+  }
+}
+/* A shallow window uses a flowing scene with a stable diagram aspect ratio. */
+@media (min-width: 901px) and (max-height: 639px) {
+  .approach-stage {
+    height: auto;
+    max-height: none;
+  }
+  .context-canvas {
+    height: auto;
+    aspect-ratio: 1.1;
+    max-height: none;
+  }
+  .approach-grid {
+    flex: none;
+    padding: 30px 0;
+  }
+}

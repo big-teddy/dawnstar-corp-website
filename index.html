@@ -107,6 +107,8 @@
         >Get in touch <svg><use href="#arrow" /></svg
       ></a>
       <button
+        data-enhanced
+        disabled
         class="menu-toggle"
         aria-label="Open navigation"
         aria-controls="mobile-nav"
@@ -114,7 +116,7 @@
       >
         <span></span><span></span>
       </button>
-      <nav id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <nav id="mobile-nav" aria-label="Mobile navigation">
         <a href="#vision">Our vision <span>01</span></a
         ><a href="#approach">Our approach <span>02</span></a
         ><a href="#wellyn">Wellyn <span>03</span></a
@@ -260,13 +262,13 @@
             role="group"
             aria-label="Our approach stages"
           >
-            <button data-step="0" aria-pressed="true">
+            <button data-enhanced disabled data-step="0" aria-pressed="true">
               <span>01</span> Start with you <i></i>
             </button>
-            <button data-step="1" aria-pressed="false">
+            <button data-enhanced disabled data-step="1" aria-pressed="false">
               <span>02</span> Narrow the options <i></i>
             </button>
-            <button data-step="2" aria-pressed="false">
+            <button data-enhanced disabled data-step="2" aria-pressed="false">
               <span>03</span> Adapt over time <i></i>
             </button>
           </div>
@@ -316,6 +318,8 @@
                 aria-label="Explore the Wellyn concept"
               >
                 <button
+                  data-enhanced
+                  disabled
                   data-view="products"
                   aria-pressed="true"
                   aria-controls="product-panel"
@@ -323,6 +327,8 @@
                   <span>01</span> Compare products
                 </button>
                 <button
+                  data-enhanced
+                  disabled
                   data-view="routine"
                   aria-pressed="false"
                   aria-controls="routine-panel"
@@ -343,7 +349,7 @@
                   </div>
                   <div class="preference-control">
                     <label for="texture">Try a different feel</label
-                    ><select id="texture">
+                    ><select data-enhanced disabled id="texture">
                       <option value="light">A lighter feel</option>
                       <option value="rich">A richer feel</option>
                     </select>
@@ -356,6 +362,8 @@
                     aria-label="Compare illustrative product profiles"
                   >
                     <button
+                      data-enhanced
+                      disabled
                       class="product-option"
                       data-product="gel"
                       aria-pressed="true"
@@ -379,12 +387,14 @@
                         ><span class="product-meta"
                           >Light finish · Airless pump</span
                         ><span class="product-action"
-                          >Compare option
+                          >Selected
                           <svg aria-hidden="true">
                             <use href="#arrow" /></svg></span
                       ></span>
                     </button>
                     <button
+                      data-enhanced
+                      disabled
                       class="product-option"
                       data-product="cream"
                       aria-pressed="false"
@@ -446,7 +456,12 @@
                       developed to consider ingredients, budget and what you
                       already own.
                     </p>
-                    <button class="button curation-continue" type="button">
+                    <button
+                      data-enhanced
+                      disabled
+                      class="button curation-continue"
+                      type="button"
+                    >
                       See it in a routine <svg><use href="#arrow" /></svg>
                     </button>
                   </div>
@@ -481,9 +496,19 @@
                       role="group"
                       aria-label="Choose example routine"
                     >
-                      <button data-period="morning" aria-pressed="true">
+                      <button
+                        data-enhanced
+                        disabled
+                        data-period="morning"
+                        aria-pressed="true"
+                      >
                         Morning</button
-                      ><button data-period="evening" aria-pressed="false">
+                      ><button
+                        data-enhanced
+                        disabled
+                        data-period="evening"
+                        aria-pressed="false"
+                      >
                         Evening
                       </button>
                     </div>
@@ -494,7 +519,7 @@
                     ></div>
                     <div class="weather-control">
                       <label for="weather">Example weather</label
-                      ><select id="weather">
+                      ><select data-enhanced disabled id="weather">
                         <option value="everyday">No change</option>
                         <option value="dry">Cooler, drier days</option>
                         <option value="warm">Warmer, humid days</option>
@@ -514,6 +539,10 @@
             <p class="demo-disclaimer">
               Concept preview with illustrative products. Responses are preset;
               this is not a live AI recommendation.
+            </p>
+            <p class="concept-availability">
+              You’re viewing a static preview. Interactive controls are
+              unavailable.
             </p>
           </div>
         </div>
@@ -617,8 +646,10 @@
             </p>
             <a class="contact-email" href="mailto:contact@dawnstarcorp.com"
               >Get in touch <svg><use href="#arrow" /></svg></a
-            ><button class="copy-email" type="button">Copy email address</button
-            ><span class="copy-status" role="status"></span>
+            ><button data-enhanced disabled class="copy-email" type="button">
+              Copy email address</button
+            ><span class="copy-status" role="status"></span
+            ><span class="contact-address">contact@dawnstarcorp.com</span>
           </div>
         </div>
         <div class="footer-wordmark" aria-hidden="true">dawnstar</div>
@@ -629,7 +660,13 @@
         </div>
       </footer>
     </main>
-    <button class="motion-toggle" type="button" aria-label="Pause motion">
+    <button
+      data-enhanced
+      disabled
+      class="motion-toggle"
+      type="button"
+      aria-label="Pause motion"
+    >
       <span class="motion-icon" aria-hidden="true">Ⅱ</span
       ><span class="motion-label">Pause motion</span>
     </button>

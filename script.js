@@ -241,7 +241,7 @@ function buildMotion({ preservePosition = false } = {}) {
         },
       });
     gsap.from(".reveal-word", {
-      opacity: 0.3,
+      opacity: 0.6,
       stagger: 0.11,
       ease: "none",
       scrollTrigger: {
@@ -277,7 +277,7 @@ function buildMotion({ preservePosition = false } = {}) {
     );
     gsap.from(".wellyn-wordmark", {
       y: 45,
-      opacity: 0.3,
+      opacity: 0.6,
       scrollTrigger: {
         trigger: ".wellyn",
         start: "top 85%",
@@ -360,7 +360,7 @@ function buildMotion({ preservePosition = false } = {}) {
     });
     gsap.from(".footer-wordmark", {
       yPercent: 25,
-      opacity: 0.3,
+      opacity: 0.6,
       ease: "none",
       scrollTrigger: {
         trigger: ".contact",
@@ -733,4 +733,11 @@ window.addEventListener("load", () => {
       } else target.scrollIntoView({ behavior: "instant" });
     });
   });
+});
+
+// Enable controls only after the complete interactive preview has initialized.
+closeMenu();
+document.body.classList.add("app-ready");
+$$("[data-enhanced]").forEach((control) => {
+  control.disabled = false;
 });
