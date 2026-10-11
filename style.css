@@ -2149,7 +2149,7 @@ details[open] .plus:after {
 /* Product curation: tangible choices, shared comparison criteria, visible reasoning. */
 .wellyn-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20em), 1fr));
   gap: 9%;
   padding: 64px 0 72px;
   align-items: end;
@@ -2526,7 +2526,7 @@ body.motion-paused .product-visual img {
 }
 @media (max-width: 900px) {
   .wellyn-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20em), 1fr));
     gap: 7%;
     padding: 50px 0;
     align-items: center;
