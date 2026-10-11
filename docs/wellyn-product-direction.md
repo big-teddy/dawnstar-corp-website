@@ -42,6 +42,10 @@ Future questions include reliable catalog and ingredient data, comparison criter
 
 Positioning recommendation: a personal wellness agent could describe the longer-term delegated research/comparison role; coach fits routine support. The current public wording is `Your personal wellness AI`. See [brand-copy-and-color.md](brand-copy-and-color.md) for the reasoning and implementation-stage limits.
 
+## Founder clarification — K-beauty-only products, 2026-10-11
+
+The founder confirmed that Wellyn will handle only K-beauty products, with the US/English market and purchase curation as the initial focus. The corporate page now states `Starting with K-beauty skincare` in the Wellyn introduction and includes that scope in search and social descriptions. This does not announce a live catalog or change the company's broader lifecycle vision.
+
 
 ## Founder clarification — product choice comes first
 

@@ -1,12 +1,12 @@
 # Dawnstar / Wellyn — positioning, copy and color
 
-2026-09-30. Current positioning and copy following the company-scope clarification and wording audit.
+Updated 2026-10-11. Current positioning and copy following the company-scope clarification and full public-text review.
 
 This document is the current wording reference. [Service storytelling](service-storytelling.md) and the [Hims home audit](hims-home-visual-audit.md) preserve research and earlier implementation rationale; their suggested labels and scene expansions are not instructions to expand the corporate page. Verification at the end of this document describes an earlier pass.
 
 ## Positioning
 
-**Dawnstar is an AI wellness company building more personal care for every stage of life. Wellyn is its first service in development: product curation and purchase guidance, with care that continues afterward.**
+**Dawnstar is an AI wellness company building more personal care for every stage of life. Wellyn is its first service in development: K-beauty skincare curation and purchase guidance, with care that continues afterward.**
 
 The founder clarified that product discovery, curation and purchase decisions are the core of Wellyn. Routines demonstrate continuity after a purchase; they must not replace the core proposition in the story or the first product example. The intended future business includes product sales/affiliate commerce, with Shopify considered for the service build. This corporate page does not implement those transactions.
 
@@ -15,7 +15,7 @@ The founder clarified that product discovery, curation and purchase decisions ar
 1. **Company identity:** `An AI wellness company` appears in the hero. Keep `A little more you.` as the emotional headline. Explain the actual work immediately: `We’re building AI to help you choose personal care products that fit your life.`
 2. **Purpose:** `Personal care. For every one of us.` expresses access. `Personal attention shouldn’t be a luxury.` explains premium care in terms of attention to preferences, budget and everyday life.
 3. **Mechanism:** `A shortlist. Shaped around you.` introduces personal context, product comparison and ongoing support. The descriptions explicitly discuss recommendations in development.
-4. **First service:** `Curated for you. Chosen by you.` keeps user control clear. Describe Wellyn as `Your personal wellness AI`, followed by product comparison, deciding what to buy and using what someone already owns. `Starting with skincare` and `In development` are adjacent.
+4. **First service:** `Curated for you. Chosen by you.` keeps user control clear. Describe Wellyn as `Your personal wellness AI`, followed by product comparison, deciding what to buy and using what someone already owns. `Starting with K-beauty skincare` and `In development` are adjacent. The founder confirmed K-beauty-only products on 2026-10-11; the company's broader lifecycle vision remains distinct.
 5. **Continuity:** `Care for every chapter.` expresses long-term lifecycle wellness, including a child's first lotion and later-life needs, while preserving the distinction between ambition and the first skincare use case.
 6. **Principles:** `Fewer products to compare.`, `A reason for each suggestion.` and `Support after the purchase.` express the intended product standard. Commercial relationships and missing information should be visible, and a useful recommendation may be to keep existing products.
 

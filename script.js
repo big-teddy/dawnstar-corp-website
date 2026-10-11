@@ -26,7 +26,7 @@ const stageProgress = [0.08, 0.46, 0.87];
 const stageDescriptions = [
   "What you need, what you prefer and what you already use. These are the starting points for the recommendations we’re developing.",
   "We’re designing Wellyn to compare product and ingredient information against your preferences, budget and environment, with a reason for each suggestion.",
-  "The next step is support using what you choose: keeping track of what works and revisiting your products as the seasons and your needs change.",
+  "After you choose, we want to help you use your products, keep track of what works and revisit your choices as the seasons and your needs change.",
 ];
 const stageTitles = [
   "01 — Personal context",
@@ -542,7 +542,7 @@ const productProfiles = {
     tradeoff: "Less cushioning than the rich cream.",
     light:
       "You chose a lighter feel. This example gel-cream matches that texture preference.",
-    rich: "A lighter alternative to your rich-feel preference. You can still choose it if that trade-off suits you.",
+    rich: "You prefer a richer feel. This example is lighter; consider whether that trade-off suits you.",
   },
   cream: {
     name: "Rich moisture cream",
@@ -550,7 +550,7 @@ const productProfiles = {
     feel: "Rich and cushioning",
     tradeoff: "A heavier finish than the gel-cream.",
     light:
-      "A richer alternative to your light-feel preference. Consider whether you enjoy a more cushioning finish.",
+      "You prefer a lighter feel. This example has a richer finish; consider whether you’d enjoy that texture.",
     rich: "You chose a richer feel. This example cream matches that texture preference.",
   },
 };
@@ -562,7 +562,7 @@ function renderCuration() {
     button.setAttribute("aria-pressed", String(selected));
     button.querySelector(".product-action").textContent = selected
       ? "Selected"
-      : "Compare option";
+      : "Choose this option";
   });
   const profile = productProfiles[selectedProduct];
   const matchesPreference =
@@ -695,7 +695,8 @@ $(".copy-email").addEventListener("click", async () => {
     await navigator.clipboard.writeText("contact@dawnstarcorp.com");
     $(".copy-status").textContent = "Copied: contact@dawnstarcorp.com";
   } catch {
-    $(".copy-status").textContent = "contact@dawnstarcorp.com";
+    $(".copy-status").textContent =
+      "Couldn’t copy. Email us at contact@dawnstarcorp.com.";
   }
 });
 $$(".principle-list details").forEach((detail) =>
